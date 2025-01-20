@@ -1,0 +1,397 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  /* background-color: #4573EB; */
+  background: rgba( 69, 115, 235, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: rgb(250, 246, 246);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: row; /* Maintain row direction */
+  align-items: center;
+}
+
+nav a {
+  color: rgb(234, 232, 232);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem; /* Small margin between items for visual separation */
+  transition: background-color 0.3s;
+  display: block; /* Make the links block elements for consistent alignment */
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  nav .container {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Keep items centered when they wrap */
+  }
+
+  nav a {
+    flex: 1 0%; /* Make links take equal space, but prevent them from shrinking below their content size */
+    text-align: center;
+  }
+}
+
+/* ... (rest of the CSS styles) ... */
+
+/* ... (rest of the CSS styles) ... */
+
+.section {
+  padding: 2rem 0;
+  background-color: #000000;
+  color: #f0f0f0;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #000;
+  color: #6a95f2;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-item {
+  
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-item:hover {
+  background: rgba( 11, 137, 215, 0.8 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10.5px );
+  -webkit-backdrop-filter: blur( 10.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: #efeaea; 
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#about-me {
+  width:auto; 
+  margin: 0 auto;
+  /* background: #9e3333; */
+  background: rgba( 0, 0, 0, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+  display: flex;
+  border-radius: 8px;
+  justify-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#about-me ul {
+  list-style-type: none;
+ 
+  padding: 0;
+  
+}
+
+#about-me ul > li {
+  margin-bottom: 15px;
+}
+
+#about-me ul > li > strong {
+  font-size: 1.1rem;
+  color: #B5D8FF
+}
+
+#about-me ul ul {
+  list-style-type: none;
+  margin: 10px 0 0 20px;
+}
+
+#about-me ul ul li {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 5px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #about-me {
+    padding: 15px;
+  }
+
+  #about-me h2 {
+    font-size: 1.5rem;
+  }
+}
+.education-section,
+.resume-section,
+.achievements-section,
+.contact {
+  text-align: center;
+  padding: 2rem;
+  color: #f0f0f0;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.skill-item {
+  flex-basis: 200px;
+  background: rgba( 0, 0, 0, 0 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18.5px );
+  -webkit-backdrop-filter: blur( 18.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1rem;
+  border-radius: 5px;
+  color: #f0f0f0;
+}
+.projects-section {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #300fe81d;; */
+
+}
+.project-cards-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  flex-wrap: nowrap; 
+}
+.project-card {
+  /* background-color: #000000; */
+  background: rgba(0, 0, 0, 0.159);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.758);
+backdrop-filter: blur( 18.5px );
+-webkit-backdrop-filter: blur( 18.5px );
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  flex: 0 0 300px; /* Each card will be 300px wide */
+  scroll-snap-align: start; /* Align to the left when scrolling */
+  transition: transform 0.2s ease-in-out;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.project-card h3 {
+  margin: 0.5rem 0;
+  color: #f0f0f0;
+}
+.project-card p {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.project-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f0f0f0;
+  background-color: #7e3b3b;
+  transition: background-color 0.2s ease-in-out;
+}
+.project-links a:hover {
+  background-color: #545454;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  
+}
+
+.contact-list li {
+  /* margin-bottom: 1rem; */
+  height: max-content;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.contact-list strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: #0056b3;
+}
+
+
+.download-button {
+  background-color: #0019d48f;
+  color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.download-button:hover {
+  background-color: #36739c;
+}
+.achievements-section {
+  text-align: center;
+  padding: 2rem;
+  color: #f0f0f0;
+  background-color: #2f0fe817;
+}
+.achievement-item {
+  background-color:  #0057b31d;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+@media (max-width: 1200px) {
+  .project-card {
+    flex: 0 0 calc(25% - 1rem); /* Four cards per row */
+  }
+}
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 calc(50% - 1rem); /* Two cards per row on smaller screens */
+  }
+  .navbar a {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.edu{
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  width: auto;
+  height: max-content;
+  margin-bottom: 10px;
+ background-color: #2f0fe817;}
+
+
+ #contact{
+  background-color: #0057b32a;
+ }
+ .ct1{
+  /* background-color: #0057b31d; */
+  margin-bottom: 10px;
+ }
